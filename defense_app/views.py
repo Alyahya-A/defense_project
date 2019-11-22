@@ -8,6 +8,20 @@ def home(request):
     if key is not None:
         key = int(key)
     text = request.POST.get('message', None)
+    letter_case = request.POST.get('lettercase', False)
+    remove_spaces = request.POST.get('removespace', False)
+
+    if remove_spaces:
+        text = text.replace(' ', '')
+        text = text.replace('\n', '')
+        text = text.replace('\r', '')
+
+    if letter_case == 'lowercase':
+        text = text.lower()
+
+    elif letter_case == 'uppercase':
+        text = text.upper()
+
     context = {
         'first_time': True,
         'selected_type': selected_type,

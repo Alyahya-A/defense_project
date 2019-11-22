@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./Defense Project _ Rail Fence Cipher_files/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./Defense Project _ Rail Fence Cipher_files/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Defense Project _ Rail Fence Cipher_files/style.css">
+
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/static/defense_app/images/icons/favicon1.png" type="image/x-icon">
+
+
+    <title>Defense Project | Rail Fence Cipher</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" style="color: #ffffff" href="http://127.0.0.1:8000/">Defense Project</a>
+
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <br><br>
+        
+
+    <div class="row ">
+        <div class="col-12">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-header_1">
+                    <h3 class="card-category">Let's Try</h3>
+                    <p class="card-text">
+                        <small class="text-muted">Welcome,, This our defense project. Here you can encrypt or decrypt
+                            your text by using Rail Fence cipher :)
+                        </small>
+                    </p>
+                </div>
+                <div class="card-body">
+                    <form action="http://127.0.0.1:8000/" method="post">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="6TxXduGHVI2UMALLQpQPEQP2w1B37jA7n7bWCDf09BJ8eapJ9KlBqq0QYzc99iCQ">
+
+                        <div class="form-row">
+
+                            <div class="col">
+                                <div class="from-group">
+                                    <label for="value_q">Select Encryption or Decryption</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="select">
+                                        <option value="encryption">Encryption</option>
+                                        <option value="decryption">Decryption</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-2"></div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="key">Enter the Key</label>
+                                    <input type="number" class="form-control " id="key" name="key" placeholder="Must be number" required="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="form-group">
+                            <label for="message">Enter your Message</label>
+                            <textarea class="form-control" name="message" placeholder="ex: Hello World!" id="message" rows="3" required=""></textarea>
+                        </div>
+
+                        <br>
+                        <center>
+                            <button type="submit" class="btn btn-outline-dark btn-lg">Result</button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="row ">
+        <div class="col-12">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-header_1">
+                    <h3 class="card-category">Encryption Result</h3>
+                    <p class="card-text">
+                        <small class="text-muted">This's your result!
+                        </small>
+                    </p>
+                </div>
+                <div class="card-body">
+                    
+                    <p class="font-weight-bold">Your plain text is:</p>
+                    <textarea class="form-control" rows="5" disabled="" style="margin-top: 0px; margin-bottom: 0px; height: 83px;">I want to set a default value for my html &lt;textarea&gt;. I read from a material that to add default value you have to do something like &lt;textarea&gt;This is default text&lt;/textarea&gt;. I did that but it doesn't work. What's the right thing to do?</textarea>
+
+                    <p class="font-weight-bold">The cipher text is:</p>
+                    <textarea class="form-control" rows="5" readonly="">Inotduver ler.r mmr t  a uoatomil xehiele/taIdautetrW'hi no? att e  eal au o yhm txae&gt;  edfo  aeilta oaddfutvleyuhv od oehn ie&lt;etraTi sdfuttx&lt;txae&gt;  i htbti os' ok htstergttigt ow saftlfmt&lt;taIaratahtdela  e stgkta&gt;s a ter.dt  dnw.a  hh d</textarea>
+                    
+
+                    
+
+                    <br>
+
+                    <div class="scrollmenu scrollbar">
+                        <table class="table table-bordered">
+                            <tbody>
+                                
+                                <tr>
+                                    
+                                    <td style="text-align: center;">I</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">n</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">d</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">u</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">v</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">r</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">l</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">r</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">.</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">r</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">m</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">m</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">r</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">u</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">m</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">i</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">l</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">x</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">h</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">i</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">l</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">/</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">I</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">d</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">u</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">r</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">W</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">'</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">h</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">i</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">n</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">?</td>
+                                    
+
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">l</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">u</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">y</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">h</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">m</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">x</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">&gt;</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">d</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">f</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">i</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">l</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">d</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">d</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">f</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">u</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">v</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">l</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">y</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">u</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">h</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">v</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">d</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">h</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">n</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">i</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">&lt;</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">r</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">T</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">i</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">s</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">d</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">f</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">u</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">x</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">&lt;</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">x</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">&gt;</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">i</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">h</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">b</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">i</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">s</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">'</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">k</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">h</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">s</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">r</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">g</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">i</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">g</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">o</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">w</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">s</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">f</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">l</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">f</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">m</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">&lt;</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">I</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">r</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">h</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">d</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">l</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">s</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">g</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">k</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">&gt;</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">s</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">e</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">r</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">.</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">d</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">t</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">d</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">n</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">w</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">.</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">a</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">h</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">h</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"> </td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;">d</td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+                                    <td style="text-align: center;"></td>
+                                    
+
+                                </tr>
+                                
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    </div>
+
+    <br><br><br>
+
+    <footer class="page-footer font-small unique-color-dark" style="background-color: #343a40;">
+        <br>
+        <div class="container text-center text-md-left mt-5" style="color: #ffffff">
+
+            <div class="row mt-3">
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">Defense Project</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Welcome,, This our defense project. Here you can encrypt or decrypt
+                        your text by using Rail Fence cipher :)</p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h5>Links</h5>
+                    <ul class="nav-list">
+                        <li><a href="http://127.0.0.1:8000/"><i class="fas fa-align-left" style="font-size: 0.7em;"></i> Home</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <small style="color: #ffffff">Copyrigth © 2019 | Defense Project by Abdulrahman Alyahya</small>
+        </center>
+
+    </footer>
+
+    <script src="./Defense Project _ Rail Fence Cipher_files/jquery-ui.min.js.download"></script>
+    <script src="./Defense Project _ Rail Fence Cipher_files/jquery.min.js.download"></script>
+    <script src="./Defense Project _ Rail Fence Cipher_files/popper.min.js.download"></script>
+    <script src="./Defense Project _ Rail Fence Cipher_files/bootstrap.min.js.download"></script>
+    <script src="./Defense Project _ Rail Fence Cipher_files/main.js.download"></script>
+
+
+
+</body></html>

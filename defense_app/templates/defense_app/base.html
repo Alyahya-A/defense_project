@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    {% load static %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'defense_app/css/bootstrap.css' %}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'defense_app/css/style.css' %}">
+
+    <link rel="shortcut icon" href="{% static 'defense_app/images/icons/favicon1.png' %}" type="image/x-icon" />
+
+
+    <title>{% block title %}Defense Project{% endblock %}</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" style="color: #ffffff" href="{% url 'defense_app:home' %}">Defense Project</a>
+
+        </div>
+    </nav>
+
+    <br />
+
+    <div class="container">
+        <br><br>
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <br><br><br>
+
+    <footer class="page-footer font-small unique-color-dark" style="background-color: #343a40;">
+        <br>
+        <div class="container text-center text-md-left mt-5" style="color: #ffffff">
+
+            <div class="row mt-3">
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">Defense Project</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Welcome,, This our defense project. Here you can encrypt or decrypt
+                        your text by using Rail Fence cipher :)</p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h5>Links</h5>
+                    <ul class="nav-list">
+                        <li><a href=" "><i class="fas fa-align-left" style="font-size: 0.7em;"></i> Home</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <small style="color: #ffffff">Copyrigth &copy; 2019 | Defense Project by Abdulrahman Alyahya</small>
+        </center>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="{% static 'defense_app/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'defense_app/js/main.js' %}"></script>
+
+</body>
+
+</html

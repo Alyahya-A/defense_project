@@ -1,0 +1,139 @@
+{% extends 'defense_app/base.html' %}
+{% load static %}
+{% block title %}Defense Project | Rail Fence Cipher{% endblock %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    {% block content %}
+
+    <div class="row ">
+        <div class="col-12">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-header_1">
+                    <h3 class="card-category">Let's Try</h3>
+                    <p class="card-text">
+                        <small class="text-muted">Welcome,, This our defense project. Here you can encrypt or decrypt
+                            your text by using Rail Fence cipher :)
+                        </small>
+                    </p>
+                </div>
+                <div class="card-body">
+                    <form action="{% url 'defense_app:home' %}" method="post">
+                        {% csrf_token %}
+
+                        <div class="form-row">
+
+                            <div class="col">
+                                <div class="from-group">
+                                    <label for="value_q">Select Encryption or Decryption</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref"
+                                        name="select">
+                                        <option value="encryption">Encryption</option>
+                                        <option value="decryption">Decryption</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-2"></div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="key">Enter the Key</label>
+                                    <input type="number" class="form-control " id="key" name="key"
+                                        placeholder="Must be number" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="form-group">
+                            <label for="message">Enter your Message</label>
+                            <textarea class="form-control" name="message" placeholder="ex: Hello World!" id="message"
+                                rows="3" required></textarea>
+                        </div>
+
+                        <br>
+                        <center>
+                            <button type="submit" class="btn btn-outline-dark btn-lg">Result</button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% if selected_type is not None %}
+
+    <div class="row ">
+        <div class="col-12">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-header_1">
+                    <h3 class="card-category">{{selected_type|title}} Result</h3>
+                    <p class="card-text">
+                        <small class="text-muted">This's your result!
+                        </small>
+                    </p>
+                </div>
+                <div class="card-body">
+                    {% if selected_type == 'encryption' %}
+                    <p class="font-weight-bold">Your plain text is:</p>
+                    <textarea class="form-control" rows="5" readonly>{{input_message}}</textarea>
+
+                    <p class="font-weight-bold">The cipher text is:</p>
+                    <textarea class="form-control" rows="5" readonly>{{output_message}}</textarea>
+                    {% endif %}
+
+                    {% if selected_type == 'decryption' %}
+                    <p class="font-weight-bold">Your cipher text is:</p>
+                    <textarea class="form-control" rows="5" readonly>{{input_message}}</textarea>
+
+                    <p class="font-weight-bold">The plain text is:</p>
+                    <textarea class="form-control" rows="5" readonly>{{output_message}}</textarea>
+
+                    {% endif %}
+
+                    <br>
+
+                    <div class="scrollmenu scrollbar">
+                        <table class="table table-bordered">
+                            <tbody>
+                                {% for row in table %}
+                                <tr>
+                                    {% for cell in row %}
+                                    <td style="text-align: center;">{{cell}}</td>
+                                    {% endfor %}
+
+                                </tr>
+                                {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% endblock %}
+
+
+
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

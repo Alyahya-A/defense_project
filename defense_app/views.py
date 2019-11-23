@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from numpy.compat import long
 
 
 def home(request):

@@ -12,14 +12,21 @@
 
     {% block content %}
 
+    {% if selected_type is not None %}
+    <div class="alert alert-secondary" role="alert">
+        <a href="#result">Please see the result below 📋</a>
+    </div>
+    <div id="google"></div>
+    {% endif %}
+
     <div class="row ">
         <div class="col-12">
             <div class="shadow-lg p-3 mb-5 bg-white rounded">
                 <div class="card-header_1">
                     <h3 class="card-category">Let's Try</h3>
                     <p class="card-text">
-                        <small class="text-muted">Welcome,, This our defense project. Here you can encrypt or decrypt
-                            your text by using Rail Fence cipher :)
+                        <small class="text-muted">Welcome,, This's our defense project. Here you can encrypt or decrypt
+                            your text by using Rail Fence cipher 🔐
                         </small>
                     </p>
                 </div>
@@ -103,7 +110,7 @@
         <div class="col-12">
             <div class="shadow-lg p-3 mb-5 bg-white rounded">
                 <div class="card-header_1">
-                    <h3 class="card-category">{{selected_type|title}} Result</h3>
+                    <h3 class="card-category" id="result">{{selected_type|title}} Result</h3>
                     <p class="card-text">
                         <small class="text-muted">This's your result!
                         </small>
